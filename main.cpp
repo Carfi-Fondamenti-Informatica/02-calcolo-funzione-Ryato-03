@@ -6,17 +6,17 @@ int main() {
     cin >> a >> b >> x >> y;
     float risultato;
 
-    if ((x < 0 && y > 0))
+    if (x < 0 && y > 0)
     {
         risultato = a*x - b*y;
     }
-    else if ((x >= 0 && y <= 0))
+    else if (x >= 0 && y <= 0)
     {
-        risultato = a*(x*x) - b*y;
+        risultato = a*x*x - b*y;
     }
     else
     {
-        risultato = a*x - b*(y*y);
+        risultato = a*x - b*y*y;
     }
 
     cout << risultato;
